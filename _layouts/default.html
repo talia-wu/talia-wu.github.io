@@ -25,9 +25,9 @@
                 <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
                 <div class="header-right">
                     <nav class="site-nav">
-                        <a href="/posts/">Posts</a>
-                        <a href="/about/">About</a>
-                    </nav>
+    <a href="/posts/" {% if page.url == '/' or page.url contains '/posts/' %}class="active"{% endif %}>Posts</a>
+    <a href="/about/" {% if page.url contains '/about/' %}class="active"{% endif %}>About</a>
+</nav>
                     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
                 </div>
             </div>
