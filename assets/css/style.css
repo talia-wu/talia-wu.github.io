@@ -113,12 +113,6 @@ body {
     margin-bottom: 50px;
 }
 
-.home-intro h2 {
-    font-size: 1.6em;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
 .home-intro p {
     color: var(--meta);
     margin-bottom: 6px;
@@ -139,7 +133,7 @@ body {
     background: var(--card-bg);
     padding: 24px;
     margin-bottom: 16px;
-    border: none;
+    border: 1px solid var(--line);
     border-radius: 8px;
     box-shadow: 0 1px 4px var(--shadow);
 }
