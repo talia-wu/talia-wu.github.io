@@ -53,7 +53,6 @@
             localStorage.setItem('theme', next);
             this.textContent = next === 'dark' ? '☀️' : '🌙';
         });
-        // Set initial button icon
         (function() {
             const theme = html.getAttribute('data-theme');
             if (toggle) toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
