@@ -3,7 +3,7 @@ layout: default
 title: 关于
 ---
 
-<div class="about-content">
+<div class="about-content" markdown="1">
 ## 关于我
 
 你好，我是 Talia。
