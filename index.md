@@ -2,23 +2,22 @@
 layout: default
 ---
 <section class="home-intro">
-    <h2>欢迎来到 Lia'Log</h2>
-    <p>你好，我是 Lia（丹阳），一名产品经理。</p>
-    <p>这个博客记录我在 vibe coding 和产品设计中的思考与学习笔记。</p>
-    <p>希望这些内容对你也有帮助。如果有任何问题或想法，欢迎交流！</p>
+    <p>👋 Hi, this is <strong>Talia</strong>.</p>
+    <p>I'm a product manager. This blog is where I document my thoughts and learning notes on <strong>vibe coding</strong> and <strong>product design</strong>.</p>
+    <p>Feel free to reach out if you have any questions or ideas 😊</p>
 </section>
 
 <section class="posts-list">
-    <h2>最新文章</h2>
+    <h2>Latest Posts</h2>
     {% for post in site.posts limit:10 %}
-    <div class="post-item">
-        <span class="post-date">{{ post.date | date: '%Y-%m-%d' }}</span>
-        <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+    <article class="post-card">
+        <a class="post-card-title" href="{{ post.url }}">{{ post.title }}</a>
         {% if post.excerpt %}
-        <p class="post-excerpt">{{ post.excerpt }}</p>
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html }}</p>
         {% endif %}
-    </div>
+        <div class="post-card-meta">Date: {{ post.date | date: '%B %-d, %Y' }} | Author: {{ site.author }}</div>
+    </article>
     {% endfor %}
     
-    <p class="archive-link"><a href="/posts/">查看全部文章 →</a></p>
+    <p class="archive-link"><a href="/posts/">View all posts →</a></p>
 </section>

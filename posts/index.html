@@ -5,22 +5,15 @@ permalink: /posts/
 ---
 
 <section class="posts-list">
-    <h2>全部文章</h2>
+    <h2>All Posts</h2>
     
     {% for post in site.posts %}
-    <div class="post-item">
-        <span class="post-date">{{ post.date | date: '%Y-%m-%d' }}</span>
-        <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+    <article class="post-card">
+        <a class="post-card-title" href="{{ post.url }}">{{ post.title }}</a>
         {% if post.excerpt %}
-        <p class="post-excerpt">{{ post.excerpt }}</p>
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html }}</p>
         {% endif %}
-        {% if post.tags %}
-        <div class="post-tags">
-            {% for tag in post.tags %}
-            <span class="tag">{{ tag }}</span>
-            {% endfor %}
-        </div>
-        {% endif %}
-    </div>
+        <div class="post-card-meta">Date: {{ post.date | date: '%B %-d, %Y' }} | Author: {{ site.author }}</div>
+    </article>
     {% endfor %}
 </section>
