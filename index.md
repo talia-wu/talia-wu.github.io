@@ -2,8 +2,8 @@
 layout: default
 ---
 <section class="home-intro">
-    <p>👋 Hi, this is <strong>Talia</strong>.</p>
-    <p>I'm a product manager. This blog is where I document my thoughts and learning notes on <strong>vibe coding</strong> and <strong>product design</strong>.</p>
+    <p>👋 Hi, this is Talia.</p>
+    <p>I'm a product manager. This blog is where I document my thoughts and learning notes on vibe coding and product design.</p>
     <p>Feel free to reach out if you have any questions or ideas 😊</p>
 </section>
 
