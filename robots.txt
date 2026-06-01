@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://talia-wu.github.io/sitemap.xml

@@ -1,0 +1,331 @@
+/* Lia'Log 博客样式 - 简洁风格，参考 lilianweng.github.io */
+
+/* ========== 全局样式 ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #0066cc;
+    --link-hover: #0052a3;
+    --border-color: #e0e0e0;
+    --code-bg: #f6f8fa;
+    --meta-color: #666666;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ========== 头部样式 ========== */
+.site-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.site-header h1 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.site-header h1 a:hover {
+    color: var(--link-color);
+}
+
+.site-subtitle {
+    color: var(--meta-color);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.site-nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* ========== 首页介绍 ========== */
+.home-intro {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: var(--code-bg);
+    border-radius: 8px;
+}
+
+.home-intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.home-intro p {
+    margin-bottom: 10px;
+}
+
+/* ========== 文章列表 ========== */
+.posts-list h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.post-item:last-child {
+    border-bottom: none;
+}
+
+.post-date {
+    color: var(--meta-color);
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.post-link {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+.post-excerpt {
+    color: var(--meta-color);
+    margin-top: 8px;
+    font-size: 0.95em;
+}
+
+.archive-link {
+    margin-top: 30px;
+}
+
+.archive-link a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.archive-link a:hover {
+    text-decoration: underline;
+}
+
+/* ========== 文章页面 ========== */
+.post {
+    max-width: 100%;
+}
+
+.post-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.post-meta {
+    color: var(--meta-color);
+    font-size: 0.95em;
+}
+
+.post-category {
+    margin-left: 15px;
+}
+
+.post-content {
+    font-size: 1.05em;
+    line-height: 1.8;
+}
+
+.post-content h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.post-content h3 {
+    font-size: 1.25em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.post-content ul, .post-content ol {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+}
+
+.post-content a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.post-content blockquote {
+    border-left: 4px solid var(--link-color);
+    padding-left: 20px;
+    margin: 25px 0;
+    color: var(--meta-color);
+    font-style: italic;
+}
+
+.post-content code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.post-content pre {
+    background: var(--code-bg);
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 25px 0;
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+}
+
+/* ========== 页脚 ========== */
+.site-footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--meta-color);
+    font-size: 0.9em;
+}
+
+.site-footer a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ========== 文章标签 ========== */
+.post-tags {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.tag {
+    display: inline-block;
+    background: var(--code-bg);
+    color: var(--meta-color);
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.post-navigation {
+    margin-top: 20px;
+}
+
+.post-navigation a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.post-navigation a:hover {
+    text-decoration: underline;
+}
+
+/* ========== 响应式设计 ========== */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .site-header h1 {
+        font-size: 2em;
+    }
+    
+    .post-title {
+        font-size: 1.6em;
+    }
+    
+    .post-content {
+        font-size: 1em;
+    }
+}
+
+/* ========== 关于页面 ========== */
+.about-content {
+    line-height: 1.8;
+}
+
+.about-content h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}

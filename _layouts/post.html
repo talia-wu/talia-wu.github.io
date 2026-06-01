@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%m月%d日' }}</time>
+            {% if page.categories %}
+            <span class="post-category">分类: {{ page.categories | join: ', ' }}</span>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    <footer class="post-footer">
+        {% if page.tags %}
+        <div class="post-tags">
+            <strong>标签:</strong>
+            {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        <div class="post-navigation">
+            <a href="/posts/">← 返回文章列表</a>
+        </div>
+    </footer>
+</article>
